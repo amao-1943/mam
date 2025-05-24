@@ -2224,3 +2224,10 @@ html {
   margin: 10px auto !important;
   padding: 15px 0 !important;
 }
+#cake {
+  width: 80vw; /* 根据视口宽度缩放 */
+  max-width: 300px; /* 桌面端最大限制 */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
