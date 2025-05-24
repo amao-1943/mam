@@ -2198,36 +2198,4 @@
 .xx94 {
 	height:80%;
 }
-/* 基础字体大小（根据屏幕宽度动态变化） */
-html {
-  font-size: calc(14px + 0.5vw);
-}
 
-/* 标题特殊处理 */
-.happy img {
-  max-width: 90vw; /* 限制最大宽度 */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-/* 确保内容区域不被切断 */
-.container {
-  padding: 20px;
-  min-height: 100vh; /* 至少占满整个屏幕高度 */
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-/* 按钮组适配 */
-.button-style1, .button-style2, .button-style3 {
-  width: 90% !important; /* 强制占满宽度 */
-  margin: 10px auto !important;
-  padding: 15px 0 !important;
-}
-#cake {
-  width: 80vw; /* 根据视口宽度缩放 */
-  max-width: 300px; /* 桌面端最大限制 */
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
