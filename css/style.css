@@ -2195,6 +2195,43 @@
 	width: 100%;
 	bottom: 0;
 }
+/* iQOO Z6x专属修复（LCD屏幕优化） */
+.iqoo-z6x {
+  --font-scale: 1.1; /* 字体放大系数 */
+  
+  .happy img {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); /* 增强标题可视性 */
+  }
+  
+  .bt1, .bt3 {
+    padding: 14px 0 !important; /* 增大点击区域 */
+  }
+}
+
+/* realme GT Neo专属修复（AMOLED屏幕优化） */
+.realme-gtneo {
+  --font-scale: 1.05;
+  
+  body {
+    background: linear-gradient(to bottom, #ff4e50 0%, #f9d423 100%);
+  }
+  
+  #cake path {
+    fill-opacity: 0.9; /* 防止AMOLED烧屏 */
+  }
+}
+
+/* 通用移动端适配 */
+@media (max-width: 1080px) {
+  html {
+    font-size: calc(16px * var(--font-scale, 1));
+  }
+  
+  .container {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+             env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+}
 .xx94 {
 	height:80%;
 }
